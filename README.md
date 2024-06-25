@@ -7,5 +7,5 @@ ask it to install the project libraries. Run the following commands:
 
 ```bash
 pipenv install
-pipenv run python tank2_level.py
+pipenv run python tank2_level_control.py
 ```
