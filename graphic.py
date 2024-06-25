@@ -1,9 +1,9 @@
 from dataclasses import dataclass
-from typing import List
+import numpy as np
 
 
 @dataclass
 class GraphicInfo:
-    time: List[float]
-    interval: List[float]
-    result: List[float]
+    time: np.array
+    interval: np.array
+    result: np.array
