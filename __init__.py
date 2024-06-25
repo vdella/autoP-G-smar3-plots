@@ -11,3 +11,12 @@ standard_level_file_data = data_from('nivel-tq2.txt')
 standard_sp_file_data = data_from('sp-tq2.txt')
 standard_valve_file_data = data_from('valve-tq2.txt')
 
+# Adaptive gain comparison results.
+ad_gain_level_file_data = data_from('AD-GAIN-lvl-tank2.txt')
+ad_gain_sp_file_data = data_from('AD-GAIN-sp-tank2.txt')
+ad_gain_valve_file_data = data_from('AD-GAIN-valve-tank2.txt')
+
+# Temperature test results
+tank_temperature_file_data = data_from('temp2-tank.txt')
+sp_temperature_file_data = data_from('temp2-sp.txt')
+
