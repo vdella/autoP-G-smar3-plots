@@ -1,12 +1,12 @@
 import matplotlib.pyplot as plt
-from __init__ import level_file_data, sp_file_data, valve_file_data
+from __init__ import standard_level_file_data, standard_sp_file_data, standard_valve_file_data
 from graphic import join_graphic_info_from
 
 
 if __name__ == '__main__':
-    level_info = join_graphic_info_from(level_file_data)
-    sp_info = join_graphic_info_from(sp_file_data)
-    valve_info = join_graphic_info_from(valve_file_data)
+    level_info = join_graphic_info_from(standard_level_file_data)
+    sp_info = join_graphic_info_from(standard_sp_file_data)
+    valve_info = join_graphic_info_from(standard_valve_file_data)
 
     plt.plot(level_info.time,
              level_info.result,
