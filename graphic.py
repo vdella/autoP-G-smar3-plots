@@ -8,7 +8,7 @@ class GraphicInfo:
     result: np.array
 
 
-def join_graph_info_from(filedata):
+def join_graphic_info_from(filedata):
     time, result = list(), list()
 
     filedata = filedata[1:]  # Jumps useless header info.
