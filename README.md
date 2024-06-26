@@ -14,9 +14,8 @@ Then, you will need to install the project dependencies. You can run the followi
 pipenv install
 ```
 
-To run the project, use the following command:
+To run one of the project files, use the following command:
 
 ```bash
-pipenv install
 pipenv run python tank2_level_control.py
 ```
