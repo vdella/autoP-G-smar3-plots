@@ -2,8 +2,19 @@
 Plots for the SMAR3 industrial plant. We will be plotting temperature with its own SP and electrical current, but also 
 the level of a conical tank with its control valve and SP.
 
-To run the project, you will need to install `Pipenv` and
-ask it to install the project libraries. Run the following commands:
+To run the project, you will need to install `Pipenv`.
+
+```bash
+pipenv --python 3.12
+```
+
+Then, you will need to install the project dependencies. You can run the following command:
+
+```bash
+pipenv install
+```
+
+To run the project, use the following command:
 
 ```bash
 pipenv install
