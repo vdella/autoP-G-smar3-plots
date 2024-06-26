@@ -21,6 +21,6 @@ if __name__ == '__main__':
     valve_info.label = 'Válvula'
     valve_info.linestyle = 'dashed'
 
-    plot(level_info, sp_info, valve_info)
+    plot(1, level_info, sp_info, valve_info)
 
     plt.savefig('graphics/arw.png')

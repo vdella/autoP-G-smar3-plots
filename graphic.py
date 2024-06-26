@@ -8,8 +8,9 @@ class GraphicInfo:
     time: np.array
     result: np.array
     label: str
-    color: str
-    linestyle: str
+    color: str = 'black'
+    linestyle: str = 'solid'
+    position: int = 0  # States into which column the graphic info must be placed.
 
 
 def join_graphic_info_from(filedata):
@@ -27,18 +28,29 @@ def join_graphic_info_from(filedata):
     time = np.array(time, dtype=float)
     result = np.array(result, dtype=float)
 
-    return GraphicInfo(time, result, label, 'black', 'solid')
+    return GraphicInfo(time, result, label)
 
 
-def plot(*args):
+def plot(cols=1, *args):
+    _, axis = plt.subplots(cols)
 
     for arg in args:
-        plt.plot(arg.time,
-                 arg.result,
-                 label=arg.label,
-                 color=arg.color,
-                 linestyle=arg.linestyle)
+        column = arg.position
 
-    plt.legend()
+        if cols > 1:
+            axis[column].plot(arg.time,
+                              arg.result,
+                              label=arg.label,
+                              color=arg.color,
+                              linestyle=arg.linestyle)
+            axis[column].legend()
+        else:
+            axis.plot(arg.time,
+                      arg.result,
+                      label=arg.label,
+                      color=arg.color,
+                      linestyle=arg.linestyle)
+            axis.legend()
+    # plt.legend()
 
     return plt
