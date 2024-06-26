@@ -22,6 +22,6 @@ arw_sp_file_data = data_from('ARW-HI-sp-tank2.txt')
 arw_valve_file_data = data_from('ARW-HI-ab-valve.txt')
 
 # Temperature test results
-tank_temperature_file_data = data_from('temp2-tank.txt')
-sp_temperature_file_data = data_from('temp2-sp.txt')
+measured_temperature_file_data = data_from('temp.txt')
+temperature_sp_file_data = data_from('temp-sp.txt')
 
