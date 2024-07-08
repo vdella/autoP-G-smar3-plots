@@ -51,6 +51,5 @@ def plot(cols=1, *args):
                       color=arg.color,
                       linestyle=arg.linestyle)
             axis.legend()
-    # plt.legend()
 
     return plt
